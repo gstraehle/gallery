@@ -1,4 +1,7 @@
 $(document).ready(function() {
-  $('#hello').click(function(){alert('hello!');});
+  lightbox.option({
+      'resizeDuration': 100,
+      'wrapAround': true
+    });
 
 });
