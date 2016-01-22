@@ -83,15 +83,18 @@ body{
   }
   .gallery{
     width: 100%;
-    height: 600px;
+    height: 800px;
   }
   .container{
     margin: 0 5%;
   }
   .gallerythumb{
   background: black;
-  height: 470px;
+  height: 570px;
   }
+  .gallerydetail{
+  height: 170px;
+}
 }
 /* ------ Preload images -------- */
 body:after {
