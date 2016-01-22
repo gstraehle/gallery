@@ -23,6 +23,7 @@ body{
 .headarea{
   margin-top: 45px;
   background: orange;
+  background-image: url('https://s3.amazonaws.com/gms-gallery/signature');
 }
 
 .gallerysummary{
@@ -35,6 +36,9 @@ body{
   width: 300px;
   vertical-align: top;
   cursor: pointer;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 .gallerythumb{
@@ -42,12 +46,17 @@ body{
   background: black;
   height: 270px;
   margin: 0;
-
+  background-size: cover;
+  border-radius: 5px;
 }
 .gallerydetail{
   padding: 15px;
   height: 70px;
   margin: 0;
+}
+
+.gallerytitle{
+  font-weight: bold;
 }
 
 .footarea{
