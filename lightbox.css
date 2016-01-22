@@ -79,7 +79,7 @@ body{
 
 @media only screen and (max-width: 1050px) and (orientation: portrait){
   body{
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   .gallery{
     width: 100%;
