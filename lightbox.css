@@ -76,7 +76,19 @@ body{
   height: 100px;
 }
 
-
+@media only screen and (max-width: 1050px) and (orientation: portrait){
+  .gallery{
+    width: 100%;
+    height: 600px;
+  }
+  .container{
+    margin: 0 5%;
+  }
+  .gallerythumb{
+  background: black;
+  height: 470px;
+  }
+}
 /* ------ Preload images -------- */
 body:after {
   content: url(close.png) url(loading.gif) url(prev.png) url(next.png);
