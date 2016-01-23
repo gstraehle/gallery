@@ -22,8 +22,11 @@ body{
 
 .headarea{
   margin-top: 45px;
-  background: orange;
-  background-image: url('https://s3.amazonaws.com/gms-gallery/signature');
+  height: 300px;
+  background-image: url('https://s3.amazonaws.com/gms-gallery/IMG_20160122_155623655.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .gallerysummary{
@@ -46,8 +49,8 @@ body{
   background: black;
   height: 270px;
   margin: 0;
-  background-size: cover;
   border-radius: 5px;
+  background-size: auto 270px;
 }
 .gallerydetail{
   padding: 15px;
@@ -60,9 +63,14 @@ body{
 }
 
 .footarea{
-  background: purple;
+  background: black;
   width: 100%;
-  height: 50px;
+  height: 25px;
+  margin-left: -5px;
+  color: white;
+  text-align: right;
+  font-size: .8em;
+  padding-top: 5px;
 }
 
 .livegallery{
@@ -100,6 +108,7 @@ body{
   .gallerythumb{
   background: black;
   height: 570px;
+  background-size: auto 570px;
   }
   .gallerydetail{
   height: 170px;
