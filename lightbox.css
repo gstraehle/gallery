@@ -16,8 +16,9 @@ body{
   background: black;
   color: white;
   margin-left: -8px;
-  padding: 10px;
+  padding-top: 5px;
   z-index: 20;
+  height: 30px;
 }
 
 .headarea{
@@ -75,17 +76,21 @@ body{
 }
 
 .livegallery{
-/*  display: none;*/
+  display: none;
 }
 
 .doneviewing{
-  float: right;
-  padding: 10px;
+  position: fixed;
+  padding: 5px;
   border: 2px solid black;
   border-radius: 10px;
   background: white;
   font-size: 1.1em;
   cursor: pointer;
+  top: 0;
+  right: 10px;
+  z-index: 30;
+  height: 35px;
 }
 
 .thumbnails {
@@ -93,6 +98,7 @@ body{
   object-fit: cover;
   border-radius: 5px;
   width: 200px;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 1050px) and (orientation: portrait){

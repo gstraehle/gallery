@@ -1,56 +1,42 @@
 $(document).ready(function() {
-
-  $('.gallery').click(GalleryApp.toggleGallery);
-  $('.doneviewing').click(function(){$('.livegallery').hide('slow'); $('.gallery').show();});
+  $('.doneviewing').click(function(){
+    $('.livegallery a').remove();
+    $('.livegallery h3').remove();
+    $('.livegallery').hide('slow');
+    $('.gallerysummary').show();
+  });
   lightbox.option({
     'resizeDuration': 100,
     'wrapAround': true
   });
   jQuery.get('http://gstraehle.github.io/gallery/gallery-db.csv', function(data) {DB = $.csv.toArrays(data);});
+  $('.gallery').click(GalleryApp.getGallery);
 });
 
 var GalleryApp = GalleryApp || {};
 var DB = [];
 
-GalleryApp.toggleGallery = function(){
-  var activeGallery = $(this).attr('id');
-  $('.livegallery').show('slow');
-  $('.gallery').hide();
+GalleryApp.getGallery = function(){
+  var galleryTitle = $(this).data('title');
+  var galleryDescription = $(this).data('description');
+  $('.gallerysummary').hide();
+  $('.livegallery').show();
+  $('.livegallery').append("<h3>" + galleryTitle + "</h3");
+  var galleryID = $(this).attr('id');
+  jQuery.each(DB,function(){
+    if($(this)[2] === galleryID){
+      $(".livegallery").append("<a href='" + $(this)[0] + "' data-lightbox='gallery-1' data-title='" + $(this)[3] + $(this)[3] + "'><img class='thumbnails' src='" + $(this)[1] + "' alt=''/></a>");
+    }
+  });
 };
 
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-72832610-1', 'auto');
+ga('send', 'pageview');
 
-    ga('create', 'UA-72832610-1', 'auto');
-    ga('send', 'pageview');
 
-// function CSVToArray( strData ){
-//   var strDelimiter =  ",";
-//   var objPattern = new RegExp(
-//       ("(\\" + strDelimiter + "|\\r?\\n|\\r|^)" + "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" + "([^\"\\" + strDelimiter + "\\r\\n]*))"
-//       ),"gi");
-//   var arrData = [[]];
-//   var arrMatches = null;
-//   while (arrMatches = objPattern.exec( strData )){
-//     var strMatchedDelimiter = arrMatches[ 1 ];
-//     if (
-//         strMatchedDelimiter.length &&
-//         strMatchedDelimiter !== strDelimiter
-//         ){
-//         arrData.push( [] );
-//       }
-//       var strMatchedValue;
-//       if (arrMatches[ 2 ]){
-//           strMatchedValue = arrMatches[ 2 ].replace(
-//               new RegExp( "\"\"", "g" ),"\"");
-//       } else {
-//           strMatchedValue = arrMatches[ 3 ];
-//       }
-//       arrData[ arrData.length - 1 ].push( strMatchedValue );
-//   }
-//   return( arrData );
-//   console.log(arrData);
-// }
+
