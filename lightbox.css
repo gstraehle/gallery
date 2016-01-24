@@ -115,10 +115,17 @@ body{
   .gallerythumb{
   background: black;
   height: 570px;
+  width: 95%;
   }
   .gallerydetail{
   height: 170px;
-}
+  }
+  .doneviewing{
+    padding: 0 10px;
+  }
+  .topbar{
+  text-align: left;
+  }
 }
 /* ------ Preload images -------- */
 body:after {
