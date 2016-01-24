@@ -46,15 +46,16 @@ body{
 
 .gallerythumb{
   margin: 15px !important;
-  background: black;
-  height: 270px;
+  width: 270px;
+  height: 260px;
   margin: 0;
   border-radius: 5px;
-  background-size: auto 270px;
+  object-fit: cover;
 }
+
 .gallerydetail{
   padding: 15px;
-  height: 70px;
+  height: 80px;
   margin: 0;
 }
 
@@ -74,7 +75,7 @@ body{
 }
 
 .livegallery{
-  display: none;
+/*  display: none;*/
 }
 
 .doneviewing{
@@ -103,7 +104,7 @@ body{
     height: 800px;
   }
   .container{
-    margin: 0 5%;
+    margin: 0;
   }
   .gallerythumb{
   background: black;
