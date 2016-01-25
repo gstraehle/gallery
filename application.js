@@ -15,10 +15,9 @@ $(document).ready(function() {
 var GalleryApp = GalleryApp || {};
 var DB = [];
 
-window.onload = function(){
-  $('head').append("<link rel='shortcut icon' href='https://s3.amazonaws.com/gms-gallery/favicon.ico' type='image/x-icon'><link rel='icon' href='https://s3.amazonaws.com/gms-gallery/favicon.ico' type='image/x-icon'>");
-
-};
+// window.onload = function(){
+//   $('head').append("<link rel='shortcut icon' href='https://s3.amazonaws.com/gms-gallery/favicon.ico' type='image/x-icon'><link rel='icon' href='https://s3.amazonaws.com/gms-gallery/favicon.ico' type='image/x-icon'>");
+// };
 
 GalleryApp.getGallery = function(){
   var galleryTitle = $(this).data('title');
