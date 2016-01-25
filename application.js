@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $('.doneviewing').click(function(){
-    $('.livegallery a').remove();
-    $('.livegallery h3').remove();
+    $('.livegallery a, .livegallery h3,.livegallery span').remove();
     $('.livegallery').hide('slow');
     $('.gallerysummary').show();
   });
@@ -25,7 +24,7 @@ GalleryApp.getGallery = function(){
   var galleryID = $(this).attr('id');
   jQuery.each(DB,function(){
     if($(this)[2] === galleryID){
-      $(".livegallery").append("<a href='" + $(this)[0] + "' data-lightbox='gallery-1'><img class='thumbnails' title='" + $(this)[4] + "' src='" + $(this)[1] + "' alt=''/></a><span class='spantitle'>" + $(this)[3] + "</span>");
+      $(".livegallery").append("<span class='spantitle'>" + $(this)[3] + "</span><a href='" + $(this)[0] + "' data-lightbox='gallery-1' data-title='"+$(this)[3]+"'><img class='thumbnails' title='" + $(this)[4] + "' src='" + $(this)[1] + "' alt=''/></a>" );
     }
   });
 };
