@@ -36,8 +36,8 @@ body{
 
 .gallery{
   display: inline-block;
-  height: 400px;
-  width: 300px;
+  height: 350px;
+  width: 250px;
   vertical-align: top;
   cursor: pointer;
   border: 1px solid lightgrey;
@@ -47,8 +47,8 @@ body{
 
 .gallerythumb{
   margin: 15px !important;
-  width: 270px;
-  height: 260px;
+  width: 220px;
+  height: 190px;
   margin: 0;
   border-radius: 5px;
   object-fit: cover;
@@ -99,6 +99,12 @@ body{
   margin: 10px;
 }
 
+.spantitle{
+  font-size: .7em;
+  color: white;
+  position: absolute;
+  padding: 15px;
+}
 @media only screen and (max-width: 1050px) and (orientation: portrait){
   body{
     font-size: 1.5em;

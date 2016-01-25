@@ -25,7 +25,7 @@ GalleryApp.getGallery = function(){
   var galleryID = $(this).attr('id');
   jQuery.each(DB,function(){
     if($(this)[2] === galleryID){
-      $(".livegallery").append("<a href='" + $(this)[0] + "' data-lightbox='gallery-1' data-title='" + $(this)[3] + $(this)[3] + "'><img class='thumbnails' src='" + $(this)[1] + "' alt=''/></a>");
+      $(".livegallery").append("<a href='" + $(this)[0] + "' data-lightbox='gallery-1'><img class='thumbnails' title='" + $(this)[4] + "' src='" + $(this)[1] + "' alt=''/></a><span class='spantitle'>" + $(this)[3] + "</span>");
     }
   });
 };
