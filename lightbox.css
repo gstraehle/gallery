@@ -83,7 +83,7 @@ body{
   border: 2px solid black;
   border-radius: 10px;
   background: white;
-  font-size: 1.1em;
+  font-size: 1em;
   cursor: pointer;
   top: 0;
   right: 10px;
@@ -129,7 +129,7 @@ body{
     padding: 0 10px;
   }
   .topbar{
-  text-align: left;
+
   }
 }
 /* ------ Preload images -------- */

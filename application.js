@@ -3,6 +3,7 @@ $(document).ready(function() {
     $('.livegallery a, .livegallery h3,.livegallery span').remove();
     $('.livegallery').hide('slow');
     $('.gallerysummary').show();
+    $('.topbar').css('text-align', 'center');
   });
   lightbox.option({
     'resizeDuration': 100,
@@ -20,6 +21,7 @@ var DB = [];
 // };
 
 GalleryApp.getGallery = function(){
+  $('.topbar').css('text-align', 'left');
   var galleryTitle = $(this).data('title');
   var galleryDescription = $(this).data('description');
   $('.gallerysummary').hide();
