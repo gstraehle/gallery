@@ -28,6 +28,7 @@ GalleryApp.getGallery = function(){
   var galleryDescription = $(this).data('description');
   $('.gallerysummary').hide();
   $('.livegallery').show();
+  $('body').scrollTop(0);
   $('.livegallery').append("<h3>" + galleryTitle + "</h3");
   var galleryID = $(this).attr('id');
   jQuery.each(DB,function(){
