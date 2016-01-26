@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('.doneviewing').click(function(){
     $('.thumbnaildivs, .livegallery h3').remove();
-    $('.footarea').show();
+    // $('.footarea').show();
     $('.livegallery').hide('slow');
     $('.gallerysummary').show();
     $('.topbar').css('text-align', 'center');
@@ -23,7 +23,7 @@ var DB = [];
 
 GalleryApp.getGallery = function(){
   $('.topbar').css('text-align', 'left');
-  $('.footarea').hide();
+  // $('.footarea').hide();
   var galleryTitle = $(this).data('title');
   var galleryDescription = $(this).data('description');
   $('.gallerysummary').hide();
@@ -32,7 +32,7 @@ GalleryApp.getGallery = function(){
   var galleryID = $(this).attr('id');
   jQuery.each(DB,function(){
     if($(this)[2] === galleryID){
-      $(".livegallery").append("<div class='thumbnaildivs' style='float: left;'><a href='" + $(this)[0] + "' data-lightbox='gallery-1' data-title='"+$(this)[3]+"'><span class='spantitle'>" + $(this)[3] + "</span><img class='thumbnails' title='" + $(this)[4] + "' src='" + $(this)[1] + "' alt=''/></a></div>" );
+      $(".livegallery").append("<div class='thumbnaildivs'><a href='" + $(this)[0] + "' data-lightbox='gallery-1' data-title='"+$(this)[3]+"'><span class='spantitle'>" + $(this)[3] + "</span><img class='thumbnails' title='" + $(this)[4] + "' src='" + $(this)[1] + "' alt=''/></a></div>" );
     }
   });
 };

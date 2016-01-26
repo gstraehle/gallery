@@ -73,6 +73,8 @@ body{
 
 .livegallery{
   display: none;
+  width: 90%;
+  margin: 0 5%;
 }
 
 .doneviewing{
@@ -97,8 +99,13 @@ body{
   margin: 10px;
 }
 
+.thumbnaildivs{
+  display: inline-block;
+  vertical-align: top;
+}
+
 .spantitle{
-  font-size: .7em;
+  font-size: .8em;
   color: white;
   position: absolute;
   padding: 15px;
@@ -127,8 +134,16 @@ body{
   .doneviewing{
     padding: 0 10px;
   }
-  .topbar{
-
+  .thumbnails {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px;
+  }
+  .spantitle{
+    font-size: .9em;
+    width: 190px;
   }
 }
 /* ------ Preload images -------- */
