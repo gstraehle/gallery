@@ -1,10 +1,10 @@
-
 body{
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em;
+  margin: 0;
 }
 
-.container{
+.appcontainer{
   margin: 0 10%;
 }
 
@@ -15,7 +15,6 @@ body{
   text-align: center;
   background: black;
   color: white;
-  margin-left: -8px;
   padding-top: 5px;
   z-index: 20;
   height: 30px;
@@ -31,7 +30,7 @@ body{
 }
 
 .gallerysummary{
-
+ width: 100%;
 }
 
 .gallery{
@@ -46,16 +45,15 @@ body{
 }
 
 .gallerythumb{
-  margin: 15px !important;
   width: 220px;
   height: 190px;
-  margin: 0;
+  margin: 15px;
   border-radius: 5px;
   object-fit: cover;
 }
 
 .gallerydetail{
-  padding: 15px;
+  padding: 10px;
   height: 80px;
   margin: 0;
 }
@@ -112,18 +110,19 @@ body{
   }
   .gallery{
     width: 100%;
-    height: 800px;
-  }
-  .container{
-    margin: 0;
+    min-width: 400px;
+    height: 710px;
+    /*margin: 2%;*/
   }
   .gallerythumb{
-  background: black;
-  height: 570px;
-  width: 95%;
+    background: black;
+    height: 570px;
+    width: 92%;
+    margin: 4% 4% 0 4%;
   }
   .gallerydetail{
-  height: 170px;
+    padding: 0 4% 0 4%;
+    height: 100px;
   }
   .doneviewing{
     padding: 0 10px;
