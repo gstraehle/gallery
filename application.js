@@ -1,11 +1,5 @@
 $(document).ready(function() {
-  $('.doneviewing').click(function(){
-    $('.thumbnaildivs, .livegallery h3').remove();
-    // $('.footarea').show();
-    $('.livegallery').hide('slow');
-    $('.gallerysummary').show();
-    $('.topbar').css('text-align', 'center');
-  });
+  $('.doneviewing').click(GalleryApp.doneViewing);
   lightbox.option({
     'resizeDuration': 100,
     'wrapAround': true
@@ -16,14 +10,23 @@ $(document).ready(function() {
 
 var GalleryApp = GalleryApp || {};
 var DB = [];
+var yposition = 0;
 
 // window.onload = function(){
 //   $('head').append("<link rel='shortcut icon' href='https://s3.amazonaws.com/gms-gallery/favicon.ico' type='image/x-icon'><link rel='icon' href='https://s3.amazonaws.com/gms-gallery/favicon.ico' type='image/x-icon'>");
 // };
 
+GalleryApp.doneViewing = function(){
+  $('.thumbnaildivs, .livegallery h3').remove();
+  $('.livegallery').hide('slow');
+  $('.gallerysummary').show();
+  $('.topbar').css('text-align', 'center');
+  $('body').scrollTop(yposition);
+};
+
 GalleryApp.getGallery = function(){
+  yposition = $(this).offset().top - 100;
   $('.topbar').css('text-align', 'left');
-  // $('.footarea').hide();
   var galleryTitle = $(this).data('title');
   var galleryDescription = $(this).data('description');
   $('.gallerysummary').hide();
