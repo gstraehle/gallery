@@ -37,7 +37,7 @@ GalleryApp.getGallery = function(){
   var galleryID = $(this).attr('id');
   jQuery.each(DB,function(){
     if($(this)[2] === galleryID){
-      var dimensions = $(this)[4].length ? "  (" + $(this)[4] + ")" : "";
+      var dimensions = $(this)[4].length ? $(this)[4] : "";
       $(".livegallery").append("<div class='thumbnaildivs'><a href='" + $(this)[0] + "' data-lightbox='gallery-1' data-title='" + $(this)[3]+ "<br><i>" + dimensions +"</i>" +"'><span class='spantitle'>" + $(this)[3] + "</span><img class='thumbnails' title='" + $(this)[4] + "' src='" + $(this)[1] + "' alt=''/></a></div>" );
     }
   });
