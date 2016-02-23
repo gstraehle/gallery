@@ -116,6 +116,9 @@ body{
   body{
     font-size: 1.5em;
   }
+  .topbar{
+  height: 40px;
+  }
   .eventsummary, .eventdetail{
     font-size: 0.8em;
   }
@@ -136,6 +139,7 @@ body{
     height: 100px;
   }
   .doneviewing{
+    height: 45px;
     padding: 0 10px;
   }
   .thumbnails {
