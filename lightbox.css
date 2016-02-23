@@ -119,7 +119,7 @@ body{
   .topbar{
   height: 40px;
   }
-  .eventsummary, .eventdetail{
+  .eventdetail{
     font-size: 0.7em;
   }
   .gallery{
