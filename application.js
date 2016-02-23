@@ -7,7 +7,7 @@ $(document).ready(function() {
   jQuery.get('http://gstraehle.github.io/gallery/gallery-db.csv', function(data) {DB = $.csv.toArrays(data);});
   $('.gallery').click(GalleryApp.getGallery);
   $('.lb-close').click(function(){console.log('close gallery');});
-  $('.upcomingevents').click(function(){$('.eventdetail, .eventsummary').toggle("slow");});
+  $('.eventdetailcue').click(function(){$('.eventdetail, .eventsummary').toggle("slow");});
 });
 
 var GalleryApp = GalleryApp || {};
