@@ -79,10 +79,11 @@ body{
 
 .doneviewing{
   position: fixed;
+  background-color: #00BFFF;
   padding: 5px;
   border: 2px solid black;
   border-radius: 10px;
-  background: white;
+  color: white;
   font-size: 1em;
   cursor: pointer;
   top: 0;
