@@ -116,6 +116,9 @@ body{
   body{
     font-size: 1.5em;
   }
+  .eventsummary, .eventdetail{
+    font-size: 1.1em;
+  }
   .gallery{
     width: 100%;
     min-width: 400px;
