@@ -5,5 +5,5 @@ More to come will include an abou the artist, upcoming shows, and potentially mo
 Site uses lightbox.js, google analytics, AWS S3, jquery, a js csv parser, html5, css, and should look fine for mobile.
 
 Visit the site at
-gms.gallery
+http://gms.gallery
 
