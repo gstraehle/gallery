@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.doneviewing').click(GalleryApp.doneViewing);
+  $('.doneviewing, .headarea').click(GalleryApp.doneViewing);
   lightbox.option({
     'resizeDuration': 100,
     'wrapAround': true
