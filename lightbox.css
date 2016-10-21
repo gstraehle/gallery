@@ -162,6 +162,7 @@ body{
   .gallerydetail{
     padding: 0 4% 0 4%;
     height: 100px;
+    font-size: 1.1em;
   }
   .doneviewing{
     height: 50px;
