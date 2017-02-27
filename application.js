@@ -1,12 +1,9 @@
 $(document).ready(function() {
   $('.doneviewing').click(GalleryApp.doneViewing);
-  lightbox.option({
-    'resizeDuration': 100,
-    'wrapAround': true
-  });
+  lightbox.option({'resizeDuration': 100, 'wrapAround': true});
   jQuery.get('http://gstraehle.github.io/gallery/gallery-db.csv', function(data) {DB = $.csv.toArrays(data);});
   $('.gallery').click(GalleryApp.getGallery);
-  $('.lb-close').click(function(){console.log('close gallery');});
+  // $('.lb-close').click(function(){console.log('close gallery');});
   $('.eventdetailcue').click(function(){$('.eventdetail, .eventsummary').toggle("slow");});
 });
 
