@@ -1,14 +1,9 @@
 $(document).ready(function() {
-<<<<<<< HEAD
-  $('.doneviewing').click(GalleryApp.doneViewing);
-  lightbox.option({'resizeDuration': 100, 'wrapAround': true});
-=======
   $('.doneviewing, .headarea').click(GalleryApp.doneViewing);
   lightbox.option({
     'resizeDuration': 100,
     'wrapAround': true
   });
->>>>>>> 50395b35abd338b975e110d2e0b7832cf64e4ee2
   jQuery.get('http://gstraehle.github.io/gallery/gallery-db.csv', function(data) {DB = $.csv.toArrays(data);});
   $('.gallery').click(GalleryApp.getGallery);
   // $('.lb-close').click(function(){console.log('close gallery');});
