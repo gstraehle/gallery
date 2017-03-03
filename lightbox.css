@@ -110,10 +110,10 @@ body{
   top: 0;
   right: 10px;
   z-index: 30;
-  height: 35px;
+  height: 45px;
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .thumbnails {
